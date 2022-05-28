@@ -1,0 +1,317 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <title>HOHAE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <form name='hotel' method='get'>
+    
+    <div class="site-section bg-image" style="background-image: url('images/hero_1.jpg')">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 mx-auto text-center align-self-center">
+            <h1 class="font-weight-bold mb-0 text-white">Welcome to HOHAE!</h1>
+            <p class="text-white">오직 당신만의 호텔을 찾아보세요!</p>
+            <p><a href="#start" class="btn px-4 m-1 btn-pill btn-outline-primary">호텔 찾으러가기</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="start">
+      <div class="container">
+          <div class='worlds'>
+              <div class="section-heading">
+                <h3>
+                  가고 싶은 나라
+                </h3> 
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-3">
+                  <input type="text" class="form-control m-1" placeholder="ex) South Korea">
+                </div>
+             </div>
+           </div>
+          <br>
+           <div class="dates">
+            <h3 class="mb-3">숙박 날짜</h3>
+             <div>
+               <label class="mb-3 d-block" for="datetimepicker1">체크인</label>
+               <div class="input-group form-control-border">
+                 <div class="input-group-append input-icon-bg-transparent">
+                   <span class="input-group-text" id="basic-addon1"><span class="icon-calendar"></span></span>
+                    <form id="frm" action="action.jsp">
+                      <input type="date" id="userdate" name="userdate">
+                    </form>
+                 </div>
+               </div>
+             </div>
+             <div>
+               <label class="mb-3 d-block" for="datetimepicker2">체크아웃</label>
+               <div class="input-group form-control-border">
+                 <div class="input-group-append input-icon-bg-transparent">
+                   <span class="input-group-text" id="basic-addon1"><span class="icon-calendar"></span></span>
+                    <form id="frm" action="action.jsp">
+                      <input type="date" id="userdate" name="userdate"> 
+                    </form>
+                 </div>
+               </div>
+             </div>             
+          </div>    
+          <br>
+          <div class="stars">
+            <div class="section-heading">
+              <h3>성급</h3> 
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id='star1' value="1성급" name="hotelstar" checked class="custom-control-input">
+              <label class="custom-control-label" for="star1">1성급</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id='star2' value="2성급" name="hotelstar" checked class="custom-control-input">
+              <label class="custom-control-label" for="star2">2성급</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id='star3' value="3성급" name="hotelstar" checked class="custom-control-input">
+              <label class="custom-control-label" for="star3">3성급</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id='star4' value="4성급" name="hotelstar" checked class="custom-control-input">
+              <label class="custom-control-label" for="star4">4성급</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id='star5' value="5성급" name="hotelstar" checked class="custom-control-input">
+              <label class="custom-control-label" for="star5">5성급</label>
+            </div>
+
+          </div>
+          <br>
+          <div class="facs">
+            <div class="section-heading mb-3">
+              <h3>편의시설</h3> 
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities1" name='f1'>
+              <label class="custom-control-label" for="facilities1">주차장</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities2" name='f2'>
+              <label class="custom-control-label" for="facilities2">Wi-Fi</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities3" name='f3'>
+              <label class="custom-control-label" for="facilities3">풀</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities4" name='f4'>
+              <label class="custom-control-label" for="facilities4">피트니스 센터</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities5" name='f5'>
+              <label class="custom-control-label" for="facilities5">바/라운지</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities6" name='f6'>
+              <label class="custom-control-label" for="facilities6">택시 서비스</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities7" name='f7'>
+              <label class="custom-control-label" for="facilities7">음식점</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities8" name='f8'>
+              <label class="custom-control-label" for="facilities8">회의실</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities9" name='f9'>
+              <label class="custom-control-label" for="facilities9">조식</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities10" name='f10'>
+              <label class="custom-control-label" for="facilities10">루프탑 바/테라스</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities11" name='f11'>
+              <label class="custom-control-label" for="facilities11">수하물 보관</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities12" name='f12'>
+              <label class="custom-control-label" for="facilities12">환전</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities13" name='f13'>
+              <label class="custom-control-label" for="facilities13">금연</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities14" name='f14'>
+              <label class="custom-control-label" for="facilities14">24시간 프론트 데스크 운영</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities15" name='f15'>
+              <label class="custom-control-label" for="facilities15">도어맨</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="facilities16" name='f16'>
+              <label class="custom-control-label" for="facilities16">세탁 서비스</label>
+            </div>
+          </div>
+          <br>
+          <div class="feats">
+            <div class="section-heading mb-3">
+              <h3>객실 특징</h3> 
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features1" name='f1'>
+              <label class="custom-control-label" for="features1">에어컨</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features2" name='f2'>
+              <label class="custom-control-label" for="features2">하우스키핑</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features3" name='f3'>
+              <label class="custom-control-label" for="features3">룸서비스</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features4" name='f4'>
+              <label class="custom-control-label" for="features4">안전 시설</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features5" name='f5'>
+              <label class="custom-control-label" for="features5">VIP 룸 시설</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features6" name='f6'>
+              <label class="custom-control-label" for="features6">미니바</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features7" name='f7'>
+              <label class="custom-control-label" for="features7">냉장고</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features8" name='f8'>
+              <label class="custom-control-label" for="features8">TV</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="features9" name='f9'>
+              <label class="custom-control-label" for="features9">다리미</label>
+            </div>
+          </div>
+          <br>
+          <div class="roomtypes">
+            <div class="section-heading">
+              <h3>객실 유형</h3> 
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="type1" name="rt" checked class="custom-control-input">
+              <label class="custom-control-label" for="type1">스탠다드</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="type2" name="rt" checked class="custom-control-input">
+              <label class="custom-control-label" for="type2">슈페리어</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="type3" name="rt" checked class="custom-control-input">
+              <label class="custom-control-label" for="type3">디럭스</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="type4" name="rt" checked class="custom-control-input">
+              <label class="custom-control-label" for="type4">이그제큐티브</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="type5" name="rt" checked class="custom-control-input">
+              <label class="custom-control-label" for="type5">스위트룸</label>
+            </div>
+          </div>
+          <br>
+          <div class="prices">
+            <div class="section-heading mb-5">
+              <h3>가격대 (0~1,000,000원)</h3> 
+            </div>
+            <div id="slider" class="no-uicustom mb"></div>
+          </div>
+          <br>
+          <div class="distances">
+            <div class="section-heading mb-3">
+              <h3>근거리 시설</h3> 
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="distance1" name='d1'>
+              <label class="custom-control-label" for="distance1">지하철</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="distance2" name='d2'>
+              <label class="custom-control-label" for="distance2">공항</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="distance3" name='d3'>
+              <label class="custom-control-label" for="distance3">버스</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="distance4" name='d4'>
+              <label class="custom-control-label" for="distance4">관광지</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="distance5" name='d5'>
+              <label class="custom-control-label" for="distance5">식당</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="distance6" name='d6'>
+              <label class="custom-control-label" for="distance6">슈퍼</label>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="btn px-4 m-1 btn-primary" onclick='location.href="./hohae2.html";'>Find Hotel</button>
+<br><br><br>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><span class="icon-close2"></span></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Mist enveloped the ship three hours out from port. A shining crescent far beneath the flying vessel. All their equipment and instruments are alive. The sky was cloudless and of a deep dark blue. A shining crescent far beneath the flying vessel.</p>
+            <p>All their equipment and instruments are alive. A shining crescent far beneath the flying vessel. The sky was cloudless and of a deep dark blue. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moments.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
